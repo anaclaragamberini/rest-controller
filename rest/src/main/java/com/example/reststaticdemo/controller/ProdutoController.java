@@ -13,7 +13,6 @@ public class ProdutoController {
     private Map<Integer, String> produtos = new HashMap<>();
     private int contador = 1;
 
-    // POST - cria novo produto
     @PostMapping
     public ResponseEntity<String> criarProduto(@RequestBody String nome) {
         produtos.put(contador, nome);
@@ -21,13 +20,11 @@ public class ProdutoController {
                 .body("Produto criado com ID: " + contador++);
     }
 
-    // GET - retorna todos
     @GetMapping
     public ResponseEntity<Map<Integer, String>> listarProdutos() {
         return ResponseEntity.ok(produtos);
     }
 
-    // GET - busca por ID
     @GetMapping("/{id}")
     public ResponseEntity<String> buscarPorId(@PathVariable int id) {
         if (produtos.containsKey(id)) {
@@ -38,7 +35,6 @@ public class ProdutoController {
         }
     }
 
-    // GET - filtro (query param)
     @GetMapping("/filtro")
     public ResponseEntity<List<String>> filtrarPorNome(@RequestParam String nome) {
         List<String> resultado = new ArrayList<>();
@@ -50,7 +46,6 @@ public class ProdutoController {
         return ResponseEntity.ok(resultado);
     }
 
-    // DELETE - apaga um produto
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deletar(@PathVariable int id) {
         if (produtos.containsKey(id)) {
@@ -61,4 +56,5 @@ public class ProdutoController {
                     .body("Produto não encontrado");
         }
     }
+
 }
