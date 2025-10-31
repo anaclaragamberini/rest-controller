@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.reststaticdemo.RestApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-29T22:47:15.425Z" hostname="MAKER262" time="1.558">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.reststaticdemo.RestApplicationTests" time="1.558"/>
+  <system-out><![CDATA[19:47:09.338 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.reststaticdemo.RestApplicationTests]: RestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:47:09.609 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.reststaticdemo.RestApplication for test class com.example.reststaticdemo.RestApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2025-10-29T19:47:10.891-03:00  INFO 20976 --- [rest] [    Test worker] c.e.reststaticdemo.RestApplicationTests  : Starting RestApplicationTests using Java 17.0.16 with PID 20976 (started by compuni in C:\Users\compuni.UNIFIL\Documents\ana - aula 29.10\rest)
+2025-10-29T19:47:10.897-03:00  INFO 20976 --- [rest] [    Test worker] c.e.reststaticdemo.RestApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T19:47:15.332-03:00  INFO 20976 --- [rest] [    Test worker] c.e.reststaticdemo.RestApplicationTests  : Started RestApplicationTests in 5.256 seconds (process running for 8.144)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
